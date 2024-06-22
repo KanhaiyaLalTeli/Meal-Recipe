@@ -1,3 +1,6 @@
+import renderFavItem from './renderFavPage.js';
+
+let favList=[];
 function removefromfav(item,e){
     e.stopPropagation()
     

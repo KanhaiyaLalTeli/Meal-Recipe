@@ -1,3 +1,5 @@
+let favList=[];
+
 function addToFav(item,e){
     e.stopPropagation()
     let flag=true;
