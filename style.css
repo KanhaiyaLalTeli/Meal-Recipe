@@ -1,0 +1,355 @@
+body{
+    background: black;
+    color: white;
+}
+#mainHeading{  
+    font-size: 2rem;
+    font-weight: 600;
+}
+#searcContainer{
+    position: relative;
+    margin-left: 2rem;
+
+}
+#searchBtn{
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; 
+    margin-left: 0.2rem;   
+}
+#searchBtn:hover{
+    background-color: #0056b3;
+}
+#headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+#searchInput{
+    width: 15rem;
+    height: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    padding: 0 0.6rem;
+    font-size: 1rem;
+}
+#itemsContainer ,#favItemPage,#simmerContainer{
+    margin-top: 1rem;
+}
+#headerBtnContainer{
+    display: flex;
+    flex-direction: column;
+}
+#favorite,#mainPageBtn{
+    width: 10rem;
+    height: 2rem;
+    /* float: right; */
+    cursor: pointer;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0.2rem 0;
+}
+#favorite:hover,#mainPageBtn:hover{
+    background-color: #d8e70c;
+}
+
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;    
+}
+.itemContainer{
+    width: 10rem;
+    height: 15rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.itemContainer:hover{
+    transform: scaleX(1.08) scaleY(1.08);
+    box-shadow: 0px 0px 0px 1.5px #fff;
+}
+.imageContainer{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.itemImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    
+}
+.favoriteBtn{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 1.5rem;
+}
+.favoriteBtn:hover{
+    background-color: #45a049;
+}
+.removefavoriteBtn{
+    background-color: #12b4e1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 1.5rem;
+}
+.removefavoriteBtn:hover{
+    background-color: red;
+}
+.hide{
+    display: none;
+}
+
+#singleItemContainer{
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 100%;
+    width: 100%; */
+}
+#spTopContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+#back,#backfromFav{
+    background-color: #d8e70c;
+    width: 3rem;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+#back:hover,#backfromFav:hover{
+    background-color: rgb(85, 237, 24);
+    color: #fff;
+}
+
+#spImageContainer{
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+#spImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    
+}
+#spAboutItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+#spName{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#spIngredient{
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.ing{
+    padding:0.2rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.ing:hover{
+    background-color: rgb(128, 76, 9);
+    cursor: pointer;
+}
+#youtube{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+#youtubeIcon{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#youtubeIcon:hover{
+    background-color: #fff;
+  
+}
+#favItem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; 
+
+}
+
+ .searchReasult{
+     border-top: 1px solid black;
+     padding: 5px 3px;
+     position: absolute;
+     top: 15px;
+     left: 0px;
+     width:15rem;
+     max-height: 260px;
+     overflow-y: scroll;
+     z-index: 1;
+     border-radius: 3px;
+}
+
+.searchOutputitem{
+   list-style: none;
+   border-top: 1px solid #999;
+   
+   padding: 5px 3px;
+   cursor: pointer;
+   text-align: left;
+   background-color: white;
+   color: black;
+   
+} 
+.searchOutputitem:hover{
+    background-color: #e9f3ff;
+}
+
+
+
+/* for SimmerUI */
+
+#simmerItems{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;    
+}
+.simmeritem{
+    width: 10rem;
+    height: 15rem;
+    border: 1px solid rgb(132, 129, 129);
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.simmerimg{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     background-color: #4d4848; /* Initial background color */
+     background: linear-gradient(to right, black, #4d4848); /* Initial gradient */
+    background-size: 200% 100%; 
+    animation: gradientAnimation 1s linear infinite; 
+}
+.simmerName{
+    width: 5rem;
+    height: 1rem;
+    background-color: #999;
+    background: linear-gradient(to right, #4d4848, #999); /* Initial gradient */
+    background-size: 200% 100%; 
+    animation: gradientAnimation 1s linear infinite; 
+}
+
+.simmerbtn{
+    background-color: #999; /* Green */
+    cursor: pointer;
+    height: 1.5rem;
+    background: linear-gradient(to right, black, #4d4848); /* Initial gradient */
+    background-size: 200% 100%; 
+    animation: gradientAnimation 1s linear infinite; 
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0 0; /* Start position */
+    }
+    100% {
+        background-position: -100% 0; /* End position */
+    }
+}
+
+
+
+@media screen and (max-width:400px){
+    #searchInput{
+        width: 10rem;
+    }
+    .searchReasult{
+        width: 12rem;
+    }
+    .itemContainer{
+        width: 8rem;
+        height: 15rem;
+       
+    }
+    .imageContainer{
+        width: 8rem;
+        height: 10rem;
+    }
+    #spImageContainer{
+        margin-top: 0.5rem;
+        width: 20rem;
+        height: 10rem;
+    }
+    #spIngredient{
+        display: none;
+    }
+    #favorite{
+        width: 10rem;
+        height: 2rem;
+    }
+    #mainHeading{
+           
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .removefavoriteBtn{
+        height: 2rem;
+    }
+
+}
