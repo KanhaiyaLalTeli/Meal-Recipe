@@ -5,8 +5,16 @@ const allItems=document.getElementById('items');
 const simmerContainer=document.getElementById('simmerContainer');
 
 function renderItems(items){
-     simmerContainer.classList.add('hide');
+ 
+    simmerContainer.classList.add('hide');
     items.forEach((item) => {
+    let name=item.strMeal;   
+    if(name.length>40)
+        {
+            name =  name.substring(0, 40);
+            name =  name+"...";
+        } 
+    
     const itemContainer=document.createElement('div');
     itemContainer.classList.add('itemContainer');
     const imageContainer=document.createElement('div');
@@ -17,7 +25,7 @@ function renderItems(items){
     imageContainer.append(itemImg);
     itemContainer.append(imageContainer)
     const itemName=document.createElement('div');
-    itemName.innerText=item.strMeal;
+    itemName.innerText=name;
     itemContainer.append(itemName)
     const addToFavBtn=document.createElement('button');
     addToFavBtn.innerText="Add to Favorite";

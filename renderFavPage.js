@@ -24,6 +24,12 @@ function renderFavItem(){
     
     favList.forEach((item)=>{
 
+    let name=item.strMeal;   
+    if(name.length>40)
+        {
+             name =  name.substring(0, 40);
+             name =  name+"...";
+        }
     const itemContainer=document.createElement('div');
     itemContainer.classList.add('itemContainer');
     const imageContainer=document.createElement('div');
@@ -34,10 +40,10 @@ function renderFavItem(){
     imageContainer.append(itemImg);
     itemContainer.append(imageContainer)
     const itemName=document.createElement('div');
-    itemName.innerText=item.strMeal;
+    itemName.innerText=name;
     itemContainer.append(itemName)
     const removeFromFavBtn=document.createElement('button');
-    removeFromFavBtn.innerText="Remove From Favorite";
+    removeFromFavBtn.innerText="Remove";
     removeFromFavBtn.classList.add("removefavoriteBtn")
     itemContainer.append(removeFromFavBtn)
 

@@ -133,8 +133,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* height: 100%;
-    width: 100%; */
+
 }
 #spTopContainer{
     display: flex;
@@ -324,12 +323,12 @@ body{
     }
     .itemContainer{
         width: 8rem;
-        height: 15rem;
+        height: 14rem;
        
     }
     .imageContainer{
         width: 8rem;
-        height: 10rem;
+        height: 9rem;
     }
     #spImageContainer{
         margin-top: 0.5rem;
@@ -339,8 +338,8 @@ body{
     #spIngredient{
         display: none;
     }
-    #favorite{
-        width: 10rem;
+    #favorite,#mainPageBtn{
+        width: 6rem;
         height: 2rem;
     }
     #mainHeading{
@@ -348,8 +347,18 @@ body{
         font-size: 1.5rem;
         font-weight: 600;
     }
-    .removefavoriteBtn{
-        height: 2rem;
-    }
+    .searchReasult{
+        max-height: 200px;
+   }
+   .simmeritem{
+    width: 8rem;
+    height: 15rem; 
+}
+
+.simmerimg{
+    width: 8rem;
+    height: 10rem;
+
+}
 
 }
